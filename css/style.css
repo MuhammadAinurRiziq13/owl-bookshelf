@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary: #ffb703;
+  --bg: #010101;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+.banner {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.banner-logo {
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  padding-left: 4rem;
+}
+
+.banner-logo img {
+  margin-right: 0.7rem;
+  width: 3rem;
+}
+.banner-logo h3 {
+  font-size: 1.728rem;
+}
+.banner-hero {
+  height: 100%;
+  width: 50%;
+  padding-left: 4rem;
+  padding-top: 5rem;
+}
+.banner-hero h1 {
+  font-size: 2.488rem;
+  font-weight: 700;
+  line-height: 3.5rem;
+  margin-bottom: 1rem;
+}
+.banner-hero-h-span,
+.section-welcoming-span-h {
+  color: var(--primary);
+}
+
+.p-hero {
+  line-height: 1.7rem;
+  margin-bottom: 1.5rem;
+}
+
+.banner-hero a {
+  display: block;
+  width: 8.75rem;
+}
+
+.btn-style {
+  padding: 0.7rem 2rem;
+  background-color: #02304700;
+  font-weight: 500;
+  color: #fff;
+  border: 1.5px solid var(--primary);
+  opacity: 0.9;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.btn-style:hover {
+  background-color: var(--primary);
+  opacity: 1;
+}
+
+/*  */
+header {
+  width: 100%;
+  height: 100px;
+  background-color: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 3px 3px var(--primary);
+  z-index: 999;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+header .logo img {
+  width: 70px;
+  margin-right: 1rem;
+}
+header .logo span {
+  color: var(--primary);
+  font-weight: bolder;
+}
+header .navbar {
+  display: flex;
+  align-items: center;
+}
+header .navbar .add {
+  font-size: 1.5rem;
+  font-style: 0.7rem;
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 50%;
+  transition: 0.2s ease;
+  background-color: var(--primary);
+  border: 2px solid var(--primary);
+  color: white;
+}
+form .input {
+  padding: 0.7rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+  width: 20.5rem;
+  border-radius: 5px;
+  margin: 0 0.5rem;
+  transition: 0.2s ease;
+}
+form .input:focus {
+  box-shadow: 0 0 20px var(--primary);
+}
+
+form .search:hover,
+header .navbar .add:hover {
+  background-color: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+/*  */
+.books-list {
+  padding: 2rem 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.books-list .accordion {
+  border-radius: 10px;
+  padding: 1rem;
+}
+.books-list .accordion > h2 {
+  width: 25rem;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bolder;
+  padding: 1rem;
+}
+
+.item {
+  position: relative;
+  border-radius: 8px;
+  width: 25rem;
+  margin-top: 16px;
+  padding: 1rem 2rem;
+  gap: 8rem;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  color: #010101;
+  box-shadow: 5px -5px 20px rgba(154, 160, 185, 0.2), -5px 5px 20px rgba(166, 173, 201, 0.2);
+}
+
+.item .inner {
+  margin-right: 2rem;
+}
+.item .inner h2 {
+  margin: 0.4rem 0.7rem 1rem 0;
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  color: var(--primary);
+}
+
+.item > .inner p {
+  margin-top: 5px;
+  font-weight: bold;
+}
+.wrap-button {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  position: absolute;
+  right: 7%;
+  bottom: 10%;
+}
+.check-button {
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background: url("../img/check.svg");
+  background-size: contain;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+  background-repeat: no-repeat;
+}
+
+.check-button:hover {
+  background: url("../img/check-2.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.trash-button {
+  width: 35px;
+  height: 35px;
+  background: url("../img/trash.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 16px;
+  cursor: pointer;
+  border: none;
+}
+.trash-button:hover {
+  background: url("../img/trash-2.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.edit-button {
+  width: 35px;
+  height: 35px;
+  background: url("../img/edit.svg");
+  background-size: contain;
+  margin-left: 16px;
+  cursor: pointer;
+  border: none;
+  background-repeat: no-repeat;
+}
+.edit-button:hover {
+  background: url("../img/edit-2.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.undo-button {
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background: url("../img/undo-ouline.svg");
+  background-size: contain;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+
+.undo-button:hover {
+  background: url("../img/undo-ouline.svg");
+  background-size: contain;
+}
+
+.check-button:focus,
+.trash-button {
+  outline: none;
+}
+
+.swal-title {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.swal-content {
+  font-size: 18px;
+}
+
+.btn.finished-btn.swal-btn {
+  background-color: #34a853;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  font-size: 18px;
+}
+.btn.remove-btn.swal-btn {
+  background-color: #ff0f0f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-size: 18px;
+  border: 1px solid #ff0f0f;
+  transition: 0.2s ease;
+}
+.btn.cancel-btn.swal-btn {
+  background-color: #ffffff;
+  color: rgb(0, 68, 255);
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-size: 18px;
+  margin-right: 0.5rem;
+  transition: 0.2s ease;
+}
+.btn.cancel-btn.swal-btn:hover {
+  background-color: rgb(194, 200, 255);
+}
+.btn.remove-btn.swal-btn:hover {
+  background-color: #db0000;
+}
+.btn.finished-btn.swal-btn:hover {
+  background-color: #2f9427;
+}
+
+/*  */
+section.add-container,
+section.edit-container {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  top: 0;
+}
+section .add-content {
+  background-color: white;
+  position: absolute;
+  width: 450px;
+  height: 430px;
+  padding: 2rem;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+}
+
+section .add-content h2 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  font-size: 1.4rem;
+}
+.add-body label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+.add-body input {
+  padding: 0.5rem;
+  width: 24rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  margin: 0.7rem 0;
+}
+.add-body input:focus {
+  box-shadow: 0 0 20px var(--primary);
+}
+.action {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.6rem 0;
+}
+.add-body .cancel-btn,
+.add-body .cancel-edit {
+  color: #010101;
+  background-color: transparent;
+  transition: 0.2s ease;
+}
+.add-body .cancel-btn:hover,
+.add-body .cancel-edit:hover {
+  color: var(--primary);
+}
+.add-body .add-btn,
+.edit-btn {
+  border: 2px solid var(--primary);
+  background-color: var(--primary);
+  transition: 0.2s ease;
+}
+.add-body .add-btn:hover,
+.edit-btn:hover {
+  background-color: transparent;
+  color: var(--primary);
+}
+.add-body button {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  font-style: 0.7rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.2s ease;
+  color: white;
+}
+
+footer {
+  width: 100%;
+  height: 5rem;
+  background-color: rgb(206, 147, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 769px) {
+  html {
+    font-size: 80%;
+  }
+  .header-hero {
+    width: 60%;
+  }
+  .check-button,
+  .trash-button,
+  .edit-button,
+  .undo-button {
+    width: 25px;
+    height: 25px;
+  }
+  section .add-content {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 85%;
+  }
+  header {
+    height: 230px;
+    flex-wrap: wrap;
+    padding: 1rem 1rem;
+  }
+  .navbar {
+    align-items: center;
+  }
+  .books-list {
+    padding: 2rem 5rem;
+    flex-wrap: wrap;
+  }
+  .banner-hero {
+    height: 100%;
+    width: 80%;
+    padding-left: 4rem;
+    padding-top: 5rem;
+  }
+  .add {
+    margin-top: 1rem;
+    margin-left: 0.8rem;
+    width: 15rem;
+  }
+  section .add-content {
+    width: 350px;
+    height: 365px;
+  }
+  #searchForm {
+    margin-top: 0.8rem;
+    display: flex;
+    justify-content: center;
+    margin-left: -0.5rem;
+  }
+  .add-body input {
+    width: 21.5rem;
+  }
+}
